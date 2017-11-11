@@ -1,1 +1,10 @@
+ create table teacher(ID varchar(10) ,course_id varchar(10), sec_id varchar(10) ,semester numeric(10,2),year numeric(10),primary key(ID));
+ 
+create table time_slot(time_slot_id varchar(10),day varchar(10),start_time TIMESTAMP,end_time TIMESTAMP,primary key(time_slot_id,day,start_time));
 
+create table students(ID varchar(10),name varchar(20),dept_name varchar(10),tot_cred numeric(10),primary key(ID)); 
+
+create table takes(ID varchar(10),course_id varchar(10),sec_id varchar(10),semester numeric(10),year numeric(4),grade varchar(10),primary key(ID,course_id,sec_id,semester,year));
+
+
+create table section(course_id varchar(10),sec_id varchar(10),semester numeric(10),year numeric(4),building varchar(10),room_no numeric(10),primary key(course_id,sec_id,semester,year));

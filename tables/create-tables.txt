@@ -8,3 +8,9 @@ create table takes(ID varchar(10),course_id varchar(10),sec_id varchar(10),semes
 
 
 create table section(course_id varchar(10),sec_id varchar(10),semester numeric(10),year numeric(4),building varchar(10),room_no numeric(10),primary key(course_id,sec_id,semester,year));
+
+insert into teacher values('1','asdf3434','c',4,2017); 
+insert into teacher values('2','f3kl434jl','c',4,2017); 
+insert into teacher values('3','f3hk434aS','c',4,2017); 
+insert into teacher values('4','fsd3434ADF','c',4,2017); 
+insert into teacher values('5','sdf434','c',4,2017); 
